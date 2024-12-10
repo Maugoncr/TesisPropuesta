@@ -36,6 +36,17 @@
             this.BtnClose = new FontAwesome.Sharp.IconButton();
             this.btnMini = new FontAwesome.Sharp.IconButton();
             this.DgvListaGastosVarios = new System.Windows.Forms.DataGridView();
+            this.CIDGasto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CIDOrdenCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CConsecutivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CDescrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CCosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CFechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CFechaGasto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CFechaModificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
@@ -77,17 +88,6 @@
             this.checkDesactivarOrden = new System.Windows.Forms.CheckBox();
             this.btnBuscarOrden = new FontAwesome.Sharp.IconButton();
             this.btnLimpiarOrden = new FontAwesome.Sharp.IconButton();
-            this.CIDGasto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CIDOrdenCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CConsecutivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CDescrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CCosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CFechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CFechaGasto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CFechaModificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaGastosVarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -95,7 +95,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Controls.Add(this.btnMini);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -191,9 +191,93 @@
             this.DgvListaGastosVarios.TabIndex = 26;
             this.DgvListaGastosVarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListaGastosVarios_CellClick);
             // 
+            // CIDGasto
+            // 
+            this.CIDGasto.DataPropertyName = "IDGasto";
+            this.CIDGasto.HeaderText = "Código Gasto";
+            this.CIDGasto.Name = "CIDGasto";
+            this.CIDGasto.ReadOnly = true;
+            // 
+            // CIDOrdenCompra
+            // 
+            this.CIDOrdenCompra.DataPropertyName = "IDOrdenCompra";
+            this.CIDOrdenCompra.HeaderText = "Orden de Compra";
+            this.CIDOrdenCompra.Name = "CIDOrdenCompra";
+            this.CIDOrdenCompra.ReadOnly = true;
+            this.CIDOrdenCompra.Width = 150;
+            // 
+            // CConsecutivo
+            // 
+            this.CConsecutivo.DataPropertyName = "Consecutivo";
+            this.CConsecutivo.HeaderText = "Consecutivo";
+            this.CConsecutivo.Name = "CConsecutivo";
+            this.CConsecutivo.ReadOnly = true;
+            // 
+            // CDescrip
+            // 
+            this.CDescrip.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CDescrip.DataPropertyName = "Descrip";
+            this.CDescrip.HeaderText = "Descripcion";
+            this.CDescrip.Name = "CDescrip";
+            this.CDescrip.ReadOnly = true;
+            // 
+            // CCantidad
+            // 
+            this.CCantidad.DataPropertyName = "Cantidad";
+            this.CCantidad.HeaderText = "Cantidad";
+            this.CCantidad.Name = "CCantidad";
+            this.CCantidad.ReadOnly = true;
+            // 
+            // CCosto
+            // 
+            this.CCosto.DataPropertyName = "Costo";
+            this.CCosto.HeaderText = "Costo";
+            this.CCosto.Name = "CCosto";
+            this.CCosto.ReadOnly = true;
+            this.CCosto.Width = 130;
+            // 
+            // CDescripcion
+            // 
+            this.CDescripcion.DataPropertyName = "Descripcion";
+            this.CDescripcion.HeaderText = "Servicentro";
+            this.CDescripcion.Name = "CDescripcion";
+            this.CDescripcion.ReadOnly = true;
+            this.CDescripcion.Width = 180;
+            // 
+            // CNombre
+            // 
+            this.CNombre.DataPropertyName = "Nombre";
+            this.CNombre.HeaderText = "Compañia";
+            this.CNombre.Name = "CNombre";
+            this.CNombre.ReadOnly = true;
+            // 
+            // CFechaRegistro
+            // 
+            this.CFechaRegistro.DataPropertyName = "FechaRegistro";
+            this.CFechaRegistro.HeaderText = "Fecha Registro";
+            this.CFechaRegistro.Name = "CFechaRegistro";
+            this.CFechaRegistro.ReadOnly = true;
+            this.CFechaRegistro.Width = 150;
+            // 
+            // CFechaGasto
+            // 
+            this.CFechaGasto.DataPropertyName = "FechaGasto";
+            this.CFechaGasto.HeaderText = "Fecha Gasto";
+            this.CFechaGasto.Name = "CFechaGasto";
+            this.CFechaGasto.ReadOnly = true;
+            this.CFechaGasto.Width = 150;
+            // 
+            // CFechaModificacion
+            // 
+            this.CFechaModificacion.DataPropertyName = "FechaModificacion";
+            this.CFechaModificacion.HeaderText = "Fecha Ultima Modificacion";
+            this.CFechaModificacion.Name = "CFechaModificacion";
+            this.CFechaModificacion.ReadOnly = true;
+            this.CFechaModificacion.Width = 150;
+            // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiar.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,7 +298,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnEditar.BackColor = System.Drawing.Color.Teal;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -235,7 +319,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnAgregar.BackColor = System.Drawing.Color.Teal;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -420,7 +504,7 @@
             // 
             // btnSelectArchivo
             // 
-            this.btnSelectArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnSelectArchivo.FlatAppearance.BorderSize = 0;
             this.btnSelectArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectArchivo.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -436,7 +520,7 @@
             // 
             // btnSelectArchivo2
             // 
-            this.btnSelectArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnSelectArchivo2.FlatAppearance.BorderSize = 0;
             this.btnSelectArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectArchivo2.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -452,7 +536,7 @@
             // 
             // btnBorrar
             // 
-            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnBorrar.BackColor = System.Drawing.Color.Teal;
             this.btnBorrar.FlatAppearance.BorderSize = 0;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -468,7 +552,7 @@
             // 
             // btnBorrar2
             // 
-            this.btnBorrar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnBorrar2.BackColor = System.Drawing.Color.Teal;
             this.btnBorrar2.FlatAppearance.BorderSize = 0;
             this.btnBorrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar2.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -486,7 +570,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label9.ForeColor = System.Drawing.Color.Teal;
             this.label9.Location = new System.Drawing.Point(1195, 615);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(284, 49);
@@ -495,7 +579,7 @@
             // 
             // btnVerArchivo
             // 
-            this.btnVerArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo.IconChar = FontAwesome.Sharp.IconChar.Eye;
@@ -511,7 +595,7 @@
             // 
             // btnVerArchivo2
             // 
-            this.btnVerArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo2.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo2.IconChar = FontAwesome.Sharp.IconChar.Eye;
@@ -539,7 +623,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 41);
             this.panel3.Name = "panel3";
@@ -548,7 +632,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1600, 41);
             this.panelNavRight.Name = "panelNavRight";
@@ -557,7 +641,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 797);
             this.panel2.Name = "panel2";
@@ -665,7 +749,7 @@
             // 
             // btnBuscarOrden
             // 
-            this.btnBuscarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnBuscarOrden.BackColor = System.Drawing.Color.Teal;
             this.btnBuscarOrden.FlatAppearance.BorderSize = 0;
             this.btnBuscarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarOrden.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -681,7 +765,7 @@
             // 
             // btnLimpiarOrden
             // 
-            this.btnLimpiarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarOrden.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarOrden.FlatAppearance.BorderSize = 0;
             this.btnLimpiarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarOrden.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -694,90 +778,6 @@
             this.btnLimpiarOrden.TabIndex = 196;
             this.btnLimpiarOrden.UseVisualStyleBackColor = false;
             this.btnLimpiarOrden.Click += new System.EventHandler(this.btnLimpiarOrden_Click);
-            // 
-            // CIDGasto
-            // 
-            this.CIDGasto.DataPropertyName = "IDGasto";
-            this.CIDGasto.HeaderText = "Código Gasto";
-            this.CIDGasto.Name = "CIDGasto";
-            this.CIDGasto.ReadOnly = true;
-            // 
-            // CIDOrdenCompra
-            // 
-            this.CIDOrdenCompra.DataPropertyName = "IDOrdenCompra";
-            this.CIDOrdenCompra.HeaderText = "Orden de Compra";
-            this.CIDOrdenCompra.Name = "CIDOrdenCompra";
-            this.CIDOrdenCompra.ReadOnly = true;
-            this.CIDOrdenCompra.Width = 150;
-            // 
-            // CConsecutivo
-            // 
-            this.CConsecutivo.DataPropertyName = "Consecutivo";
-            this.CConsecutivo.HeaderText = "Consecutivo";
-            this.CConsecutivo.Name = "CConsecutivo";
-            this.CConsecutivo.ReadOnly = true;
-            // 
-            // CDescrip
-            // 
-            this.CDescrip.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CDescrip.DataPropertyName = "Descrip";
-            this.CDescrip.HeaderText = "Descripcion";
-            this.CDescrip.Name = "CDescrip";
-            this.CDescrip.ReadOnly = true;
-            // 
-            // CCantidad
-            // 
-            this.CCantidad.DataPropertyName = "Cantidad";
-            this.CCantidad.HeaderText = "Cantidad";
-            this.CCantidad.Name = "CCantidad";
-            this.CCantidad.ReadOnly = true;
-            // 
-            // CCosto
-            // 
-            this.CCosto.DataPropertyName = "Costo";
-            this.CCosto.HeaderText = "Costo";
-            this.CCosto.Name = "CCosto";
-            this.CCosto.ReadOnly = true;
-            this.CCosto.Width = 130;
-            // 
-            // CDescripcion
-            // 
-            this.CDescripcion.DataPropertyName = "Descripcion";
-            this.CDescripcion.HeaderText = "Servicentro";
-            this.CDescripcion.Name = "CDescripcion";
-            this.CDescripcion.ReadOnly = true;
-            this.CDescripcion.Width = 180;
-            // 
-            // CNombre
-            // 
-            this.CNombre.DataPropertyName = "Nombre";
-            this.CNombre.HeaderText = "Compañia";
-            this.CNombre.Name = "CNombre";
-            this.CNombre.ReadOnly = true;
-            // 
-            // CFechaRegistro
-            // 
-            this.CFechaRegistro.DataPropertyName = "FechaRegistro";
-            this.CFechaRegistro.HeaderText = "Fecha Registro";
-            this.CFechaRegistro.Name = "CFechaRegistro";
-            this.CFechaRegistro.ReadOnly = true;
-            this.CFechaRegistro.Width = 150;
-            // 
-            // CFechaGasto
-            // 
-            this.CFechaGasto.DataPropertyName = "FechaGasto";
-            this.CFechaGasto.HeaderText = "Fecha Gasto";
-            this.CFechaGasto.Name = "CFechaGasto";
-            this.CFechaGasto.ReadOnly = true;
-            this.CFechaGasto.Width = 150;
-            // 
-            // CFechaModificacion
-            // 
-            this.CFechaModificacion.DataPropertyName = "FechaModificacion";
-            this.CFechaModificacion.HeaderText = "Fecha Ultima Modificacion";
-            this.CFechaModificacion.Name = "CFechaModificacion";
-            this.CFechaModificacion.ReadOnly = true;
-            this.CFechaModificacion.Width = 150;
             // 
             // FrmGestionGastosVarios
             // 

@@ -49,6 +49,8 @@
             this.CFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnClose = new FontAwesome.Sharp.IconButton();
+            this.btnMini = new FontAwesome.Sharp.IconButton();
             this.cbTipoMantenimiento = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCosto = new System.Windows.Forms.TextBox();
@@ -82,11 +84,15 @@
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.txtIDCarro = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.btnLimpiarCarro = new FontAwesome.Sharp.IconButton();
+            this.btnBuscarCarro = new FontAwesome.Sharp.IconButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtNombreChofer = new System.Windows.Forms.TextBox();
             this.txtIDChofer = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.btnLimpiarChofer = new FontAwesome.Sharp.IconButton();
+            this.btnBuscarChofer = new FontAwesome.Sharp.IconButton();
             this.label7 = new System.Windows.Forms.Label();
             this.txtOrdenCompra = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -116,10 +122,6 @@
             this.btnBuscarOrden = new FontAwesome.Sharp.IconButton();
             this.btnExportar = new FontAwesome.Sharp.IconButton();
             this.btnCalculator = new FontAwesome.Sharp.IconButton();
-            this.btnLimpiarChofer = new FontAwesome.Sharp.IconButton();
-            this.btnBuscarChofer = new FontAwesome.Sharp.IconButton();
-            this.btnLimpiarCarro = new FontAwesome.Sharp.IconButton();
-            this.btnBuscarCarro = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
@@ -130,8 +132,6 @@
             this.btnLimpiarArchivo = new FontAwesome.Sharp.IconButton();
             this.btnSelectArchivo2 = new FontAwesome.Sharp.IconButton();
             this.btnSelectArchivo = new FontAwesome.Sharp.IconButton();
-            this.BtnClose = new FontAwesome.Sharp.IconButton();
-            this.btnMini = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaM)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -321,7 +321,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Controls.Add(this.btnMini);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -330,6 +330,37 @@
             this.panel1.Size = new System.Drawing.Size(1827, 30);
             this.panel1.TabIndex = 118;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClose.FlatAppearance.BorderSize = 0;
+            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClose.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
+            this.BtnClose.IconColor = System.Drawing.Color.White;
+            this.BtnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnClose.IconSize = 30;
+            this.BtnClose.Location = new System.Drawing.Point(1796, -4);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(31, 39);
+            this.BtnClose.TabIndex = 3;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.BackColor = System.Drawing.Color.Transparent;
+            this.btnMini.FlatAppearance.BorderSize = 0;
+            this.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMini.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMini.IconColor = System.Drawing.Color.White;
+            this.btnMini.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMini.IconSize = 30;
+            this.btnMini.Location = new System.Drawing.Point(1759, -4);
+            this.btnMini.Name = "btnMini";
+            this.btnMini.Size = new System.Drawing.Size(31, 39);
+            this.btnMini.TabIndex = 4;
+            this.btnMini.UseVisualStyleBackColor = false;
             // 
             // cbTipoMantenimiento
             // 
@@ -518,7 +549,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 30);
             this.panel3.Name = "panel3";
@@ -527,7 +558,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 908);
             this.panel2.Name = "panel2";
@@ -536,7 +567,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1817, 30);
             this.panelNavRight.Name = "panelNavRight";
@@ -587,7 +618,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label13.ForeColor = System.Drawing.Color.Teal;
             this.label13.Location = new System.Drawing.Point(1411, 504);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(323, 45);
@@ -674,6 +705,38 @@
             this.label14.TabIndex = 163;
             this.label14.Text = "Placa:";
             // 
+            // btnLimpiarCarro
+            // 
+            this.btnLimpiarCarro.BackColor = System.Drawing.Color.Teal;
+            this.btnLimpiarCarro.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarCarro.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnLimpiarCarro.IconColor = System.Drawing.Color.White;
+            this.btnLimpiarCarro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLimpiarCarro.IconSize = 20;
+            this.btnLimpiarCarro.Location = new System.Drawing.Point(189, 45);
+            this.btnLimpiarCarro.Name = "btnLimpiarCarro";
+            this.btnLimpiarCarro.Size = new System.Drawing.Size(28, 24);
+            this.btnLimpiarCarro.TabIndex = 132;
+            this.btnLimpiarCarro.UseVisualStyleBackColor = false;
+            this.btnLimpiarCarro.Click += new System.EventHandler(this.btnLimpiarCarro_Click);
+            // 
+            // btnBuscarCarro
+            // 
+            this.btnBuscarCarro.BackColor = System.Drawing.Color.Teal;
+            this.btnBuscarCarro.FlatAppearance.BorderSize = 0;
+            this.btnBuscarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCarro.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnBuscarCarro.IconColor = System.Drawing.Color.White;
+            this.btnBuscarCarro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarCarro.IconSize = 20;
+            this.btnBuscarCarro.Location = new System.Drawing.Point(156, 45);
+            this.btnBuscarCarro.Name = "btnBuscarCarro";
+            this.btnBuscarCarro.Size = new System.Drawing.Size(28, 24);
+            this.btnBuscarCarro.TabIndex = 150;
+            this.btnBuscarCarro.UseVisualStyleBackColor = false;
+            this.btnBuscarCarro.Click += new System.EventHandler(this.btnBuscarCarro_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
@@ -730,6 +793,38 @@
             this.label17.Size = new System.Drawing.Size(68, 19);
             this.label17.TabIndex = 163;
             this.label17.Text = "Nombre:";
+            // 
+            // btnLimpiarChofer
+            // 
+            this.btnLimpiarChofer.BackColor = System.Drawing.Color.Teal;
+            this.btnLimpiarChofer.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarChofer.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnLimpiarChofer.IconColor = System.Drawing.Color.White;
+            this.btnLimpiarChofer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLimpiarChofer.IconSize = 20;
+            this.btnLimpiarChofer.Location = new System.Drawing.Point(189, 45);
+            this.btnLimpiarChofer.Name = "btnLimpiarChofer";
+            this.btnLimpiarChofer.Size = new System.Drawing.Size(28, 24);
+            this.btnLimpiarChofer.TabIndex = 132;
+            this.btnLimpiarChofer.UseVisualStyleBackColor = false;
+            this.btnLimpiarChofer.Click += new System.EventHandler(this.btnLimpiarChofer_Click);
+            // 
+            // btnBuscarChofer
+            // 
+            this.btnBuscarChofer.BackColor = System.Drawing.Color.Teal;
+            this.btnBuscarChofer.FlatAppearance.BorderSize = 0;
+            this.btnBuscarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarChofer.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnBuscarChofer.IconColor = System.Drawing.Color.White;
+            this.btnBuscarChofer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarChofer.IconSize = 20;
+            this.btnBuscarChofer.Location = new System.Drawing.Point(156, 45);
+            this.btnBuscarChofer.Name = "btnBuscarChofer";
+            this.btnBuscarChofer.Size = new System.Drawing.Size(28, 24);
+            this.btnBuscarChofer.TabIndex = 150;
+            this.btnBuscarChofer.UseVisualStyleBackColor = false;
+            this.btnBuscarChofer.Click += new System.EventHandler(this.btnBuscarChofer_Click);
             // 
             // label7
             // 
@@ -835,7 +930,7 @@
             // 
             // label22
             // 
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.label22.BackColor = System.Drawing.Color.Teal;
             this.label22.Location = new System.Drawing.Point(28, 665);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(1250, 3);
@@ -843,7 +938,7 @@
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.label23.BackColor = System.Drawing.Color.Teal;
             this.label23.Location = new System.Drawing.Point(28, 488);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(508, 3);
@@ -851,7 +946,7 @@
             // 
             // label24
             // 
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.label24.BackColor = System.Drawing.Color.Teal;
             this.label24.Location = new System.Drawing.Point(1275, 491);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(3, 175);
@@ -859,7 +954,7 @@
             // 
             // label26
             // 
-            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.label26.BackColor = System.Drawing.Color.Teal;
             this.label26.Location = new System.Drawing.Point(526, 488);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(752, 3);
@@ -867,7 +962,7 @@
             // 
             // label27
             // 
-            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.label27.BackColor = System.Drawing.Color.Teal;
             this.label27.Location = new System.Drawing.Point(28, 488);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(3, 180);
@@ -963,10 +1058,10 @@
             // checkDesactivarOrden
             // 
             this.checkDesactivarOrden.AutoSize = true;
-            this.checkDesactivarOrden.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkDesactivarOrden.Location = new System.Drawing.Point(1459, 638);
+            this.checkDesactivarOrden.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDesactivarOrden.Location = new System.Drawing.Point(1457, 622);
             this.checkDesactivarOrden.Name = "checkDesactivarOrden";
-            this.checkDesactivarOrden.Size = new System.Drawing.Size(227, 21);
+            this.checkDesactivarOrden.Size = new System.Drawing.Size(229, 20);
             this.checkDesactivarOrden.TabIndex = 191;
             this.checkDesactivarOrden.Text = "MARCAR ORDEN COMO USADA";
             this.checkDesactivarOrden.UseVisualStyleBackColor = true;
@@ -980,10 +1075,11 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 192;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // btnLimpiarOrden
             // 
-            this.btnLimpiarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarOrden.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarOrden.FlatAppearance.BorderSize = 0;
             this.btnLimpiarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarOrden.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -999,7 +1095,7 @@
             // 
             // btnBuscarOrden
             // 
-            this.btnBuscarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnBuscarOrden.BackColor = System.Drawing.Color.Teal;
             this.btnBuscarOrden.FlatAppearance.BorderSize = 0;
             this.btnBuscarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarOrden.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -1029,7 +1125,7 @@
             // 
             // btnCalculator
             // 
-            this.btnCalculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCalculator.BackColor = System.Drawing.Color.Teal;
             this.btnCalculator.FlatAppearance.BorderSize = 0;
             this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalculator.IconChar = FontAwesome.Sharp.IconChar.Calculator;
@@ -1043,70 +1139,6 @@
             this.btnCalculator.UseVisualStyleBackColor = false;
             this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
-            // btnLimpiarChofer
-            // 
-            this.btnLimpiarChofer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnLimpiarChofer.FlatAppearance.BorderSize = 0;
-            this.btnLimpiarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiarChofer.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnLimpiarChofer.IconColor = System.Drawing.Color.White;
-            this.btnLimpiarChofer.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLimpiarChofer.IconSize = 20;
-            this.btnLimpiarChofer.Location = new System.Drawing.Point(189, 45);
-            this.btnLimpiarChofer.Name = "btnLimpiarChofer";
-            this.btnLimpiarChofer.Size = new System.Drawing.Size(28, 24);
-            this.btnLimpiarChofer.TabIndex = 132;
-            this.btnLimpiarChofer.UseVisualStyleBackColor = false;
-            this.btnLimpiarChofer.Click += new System.EventHandler(this.btnLimpiarChofer_Click);
-            // 
-            // btnBuscarChofer
-            // 
-            this.btnBuscarChofer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnBuscarChofer.FlatAppearance.BorderSize = 0;
-            this.btnBuscarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarChofer.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnBuscarChofer.IconColor = System.Drawing.Color.White;
-            this.btnBuscarChofer.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarChofer.IconSize = 20;
-            this.btnBuscarChofer.Location = new System.Drawing.Point(156, 45);
-            this.btnBuscarChofer.Name = "btnBuscarChofer";
-            this.btnBuscarChofer.Size = new System.Drawing.Size(28, 24);
-            this.btnBuscarChofer.TabIndex = 150;
-            this.btnBuscarChofer.UseVisualStyleBackColor = false;
-            this.btnBuscarChofer.Click += new System.EventHandler(this.btnBuscarChofer_Click);
-            // 
-            // btnLimpiarCarro
-            // 
-            this.btnLimpiarCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnLimpiarCarro.FlatAppearance.BorderSize = 0;
-            this.btnLimpiarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiarCarro.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnLimpiarCarro.IconColor = System.Drawing.Color.White;
-            this.btnLimpiarCarro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLimpiarCarro.IconSize = 20;
-            this.btnLimpiarCarro.Location = new System.Drawing.Point(189, 45);
-            this.btnLimpiarCarro.Name = "btnLimpiarCarro";
-            this.btnLimpiarCarro.Size = new System.Drawing.Size(28, 24);
-            this.btnLimpiarCarro.TabIndex = 132;
-            this.btnLimpiarCarro.UseVisualStyleBackColor = false;
-            this.btnLimpiarCarro.Click += new System.EventHandler(this.btnLimpiarCarro_Click);
-            // 
-            // btnBuscarCarro
-            // 
-            this.btnBuscarCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnBuscarCarro.FlatAppearance.BorderSize = 0;
-            this.btnBuscarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCarro.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnBuscarCarro.IconColor = System.Drawing.Color.White;
-            this.btnBuscarCarro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarCarro.IconSize = 20;
-            this.btnBuscarCarro.Location = new System.Drawing.Point(156, 45);
-            this.btnBuscarCarro.Name = "btnBuscarCarro";
-            this.btnBuscarCarro.Size = new System.Drawing.Size(28, 24);
-            this.btnBuscarCarro.TabIndex = 150;
-            this.btnBuscarCarro.UseVisualStyleBackColor = false;
-            this.btnBuscarCarro.Click += new System.EventHandler(this.btnBuscarCarro_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PracticaEmpresarial.Properties.Resources.Paso1;
@@ -1116,10 +1148,11 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 160;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiar.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1140,7 +1173,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnEditar.BackColor = System.Drawing.Color.Teal;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1161,7 +1194,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnAgregar.BackColor = System.Drawing.Color.Teal;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1182,7 +1215,7 @@
             // 
             // btnVerArchivo2
             // 
-            this.btnVerArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo2.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo2.IconChar = FontAwesome.Sharp.IconChar.Eye;
@@ -1198,7 +1231,7 @@
             // 
             // btnVerArchivo
             // 
-            this.btnVerArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo.IconChar = FontAwesome.Sharp.IconChar.Eye;
@@ -1214,7 +1247,7 @@
             // 
             // btnLimpiarArchivo2
             // 
-            this.btnLimpiarArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarArchivo2.FlatAppearance.BorderSize = 0;
             this.btnLimpiarArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarArchivo2.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -1230,7 +1263,7 @@
             // 
             // btnLimpiarArchivo
             // 
-            this.btnLimpiarArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarArchivo.FlatAppearance.BorderSize = 0;
             this.btnLimpiarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarArchivo.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -1246,7 +1279,7 @@
             // 
             // btnSelectArchivo2
             // 
-            this.btnSelectArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnSelectArchivo2.FlatAppearance.BorderSize = 0;
             this.btnSelectArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectArchivo2.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -1262,7 +1295,7 @@
             // 
             // btnSelectArchivo
             // 
-            this.btnSelectArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnSelectArchivo.FlatAppearance.BorderSize = 0;
             this.btnSelectArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectArchivo.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -1275,37 +1308,6 @@
             this.btnSelectArchivo.TabIndex = 131;
             this.btnSelectArchivo.UseVisualStyleBackColor = false;
             this.btnSelectArchivo.Click += new System.EventHandler(this.btnSelectArchivo_Click);
-            // 
-            // BtnClose
-            // 
-            this.BtnClose.BackColor = System.Drawing.Color.Transparent;
-            this.BtnClose.FlatAppearance.BorderSize = 0;
-            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClose.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
-            this.BtnClose.IconColor = System.Drawing.Color.White;
-            this.BtnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnClose.IconSize = 30;
-            this.BtnClose.Location = new System.Drawing.Point(1796, -4);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(31, 39);
-            this.BtnClose.TabIndex = 3;
-            this.BtnClose.UseVisualStyleBackColor = false;
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // btnMini
-            // 
-            this.btnMini.BackColor = System.Drawing.Color.Transparent;
-            this.btnMini.FlatAppearance.BorderSize = 0;
-            this.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMini.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMini.IconColor = System.Drawing.Color.White;
-            this.btnMini.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMini.IconSize = 30;
-            this.btnMini.Location = new System.Drawing.Point(1759, -4);
-            this.btnMini.Name = "btnMini";
-            this.btnMini.Size = new System.Drawing.Size(31, 39);
-            this.btnMini.TabIndex = 4;
-            this.btnMini.UseVisualStyleBackColor = false;
             // 
             // FrmGestionMantenimientos
             // 

@@ -71,7 +71,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -110,7 +110,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1206, 51);
             this.panelNavRight.Name = "panelNavRight";
@@ -119,7 +119,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 51);
             this.panel3.Name = "panel3";
@@ -128,7 +128,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 335);
             this.panel2.Name = "panel2";
@@ -211,7 +211,7 @@
             // 
             // btnCrearMantenimientoR
             // 
-            this.btnCrearMantenimientoR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCrearMantenimientoR.BackColor = System.Drawing.Color.Teal;
             this.btnCrearMantenimientoR.FlatAppearance.BorderSize = 0;
             this.btnCrearMantenimientoR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearMantenimientoR.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -364,7 +364,7 @@
             // 
             // btnCrearGastoR
             // 
-            this.btnCrearGastoR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCrearGastoR.BackColor = System.Drawing.Color.Teal;
             this.btnCrearGastoR.FlatAppearance.BorderSize = 0;
             this.btnCrearGastoR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearGastoR.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -469,7 +469,7 @@
             // 
             // btnCrearVehiculoR
             // 
-            this.btnCrearVehiculoR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCrearVehiculoR.BackColor = System.Drawing.Color.Teal;
             this.btnCrearVehiculoR.FlatAppearance.BorderSize = 0;
             this.btnCrearVehiculoR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearVehiculoR.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -64,7 +64,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,7 +85,7 @@
             // 
             // btnSeleccionarOrden
             // 
-            this.btnSeleccionarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSeleccionarOrden.BackColor = System.Drawing.Color.Teal;
             this.btnSeleccionarOrden.FlatAppearance.BorderSize = 0;
             this.btnSeleccionarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeleccionarOrden.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,7 +185,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -212,7 +212,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 29);
             this.panel3.Name = "panel3";
@@ -221,7 +221,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1196, 29);
             this.panelNavRight.Name = "panelNavRight";
@@ -230,7 +230,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 625);
             this.panel2.Name = "panel2";
@@ -241,7 +241,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label13.ForeColor = System.Drawing.Color.Teal;
             this.label13.Location = new System.Drawing.Point(70, 521);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(600, 45);

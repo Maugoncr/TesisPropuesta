@@ -117,7 +117,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Controls.Add(this.btnMini);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -161,7 +161,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 30);
             this.panel3.Name = "panel3";
@@ -170,7 +170,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 813);
             this.panel2.Name = "panel2";
@@ -179,7 +179,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(180)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1863, 30);
             this.panelNavRight.Name = "panelNavRight";
@@ -603,7 +603,7 @@
             // 
             // btnLimpiarChofer
             // 
-            this.btnLimpiarChofer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarChofer.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarChofer.FlatAppearance.BorderSize = 0;
             this.btnLimpiarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarChofer.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -619,7 +619,7 @@
             // 
             // btnBuscarChofer
             // 
-            this.btnBuscarChofer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnBuscarChofer.BackColor = System.Drawing.Color.Teal;
             this.btnBuscarChofer.FlatAppearance.BorderSize = 0;
             this.btnBuscarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarChofer.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -692,7 +692,7 @@
             // 
             // btnLimpiarCarro
             // 
-            this.btnLimpiarCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarCarro.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarCarro.FlatAppearance.BorderSize = 0;
             this.btnLimpiarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarCarro.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -708,7 +708,7 @@
             // 
             // btnBuscarCarro
             // 
-            this.btnBuscarCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnBuscarCarro.BackColor = System.Drawing.Color.Teal;
             this.btnBuscarCarro.FlatAppearance.BorderSize = 0;
             this.btnBuscarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCarro.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -746,7 +746,7 @@
             // 
             // btnVerArchivo2
             // 
-            this.btnVerArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo2.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo2.IconChar = FontAwesome.Sharp.IconChar.Eye;
@@ -762,7 +762,7 @@
             // 
             // btnVerArchivo
             // 
-            this.btnVerArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo.IconChar = FontAwesome.Sharp.IconChar.Eye;
@@ -778,7 +778,7 @@
             // 
             // btnLimpiarArchivo2
             // 
-            this.btnLimpiarArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarArchivo2.FlatAppearance.BorderSize = 0;
             this.btnLimpiarArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarArchivo2.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -794,7 +794,7 @@
             // 
             // btnLimpiarArchivo
             // 
-            this.btnLimpiarArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiarArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiarArchivo.FlatAppearance.BorderSize = 0;
             this.btnLimpiarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarArchivo.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -810,7 +810,7 @@
             // 
             // btnSelectArchivo2
             // 
-            this.btnSelectArchivo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectArchivo2.BackColor = System.Drawing.Color.Teal;
             this.btnSelectArchivo2.FlatAppearance.BorderSize = 0;
             this.btnSelectArchivo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectArchivo2.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -866,7 +866,7 @@
             // 
             // btnSelectArchivo
             // 
-            this.btnSelectArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnSelectArchivo.FlatAppearance.BorderSize = 0;
             this.btnSelectArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectArchivo.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -932,7 +932,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiar.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -953,7 +953,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnEditar.BackColor = System.Drawing.Color.Teal;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -974,7 +974,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnAgregar.BackColor = System.Drawing.Color.Teal;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -995,7 +995,7 @@
             // 
             // btnDesactivar
             // 
-            this.btnDesactivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnDesactivar.BackColor = System.Drawing.Color.Teal;
             this.btnDesactivar.FlatAppearance.BorderSize = 0;
             this.btnDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDesactivar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1018,7 +1018,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label13.ForeColor = System.Drawing.Color.Teal;
             this.label13.Location = new System.Drawing.Point(1317, 719);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(407, 45);
@@ -1027,7 +1027,7 @@
             // 
             // btnImprimir
             // 
-            this.btnImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnImprimir.BackColor = System.Drawing.Color.Teal;
             this.btnImprimir.FlatAppearance.BorderSize = 0;
             this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImprimir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1048,7 +1048,7 @@
             // 
             // btnExportar
             // 
-            this.btnExportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnExportar.BackColor = System.Drawing.Color.Teal;
             this.btnExportar.FlatAppearance.BorderSize = 0;
             this.btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExportar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -196,10 +196,9 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.DarkOrange;
+            this.label3.BackColor = System.Drawing.Color.Coral;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Image = global::PracticaEmpresarial.Properties.Resources.Warning_label;
             this.label3.Location = new System.Drawing.Point(657, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(207, 37);
@@ -209,10 +208,9 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkOrange;
+            this.label2.BackColor = System.Drawing.Color.Coral;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Image = global::PracticaEmpresarial.Properties.Resources.Warning_label;
             this.label2.Location = new System.Drawing.Point(131, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(242, 37);
@@ -222,8 +220,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.BackgroundImage = global::PracticaEmpresarial.Properties.Resources.down;
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 542);
@@ -233,8 +230,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.BackgroundImage = global::PracticaEmpresarial.Properties.Resources.LeftRight;
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 37);
@@ -244,8 +240,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.Gray;
-            this.panelNavRight.BackgroundImage = global::PracticaEmpresarial.Properties.Resources.LeftRight;
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1007, 37);
@@ -255,8 +250,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.BackgroundImage = global::PracticaEmpresarial.Properties.Resources.top;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BtnClose);
@@ -269,10 +263,9 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkOrange;
+            this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::PracticaEmpresarial.Properties.Resources.Warning_label;
             this.label1.Location = new System.Drawing.Point(365, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 37);

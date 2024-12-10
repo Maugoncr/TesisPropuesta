@@ -54,7 +54,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Controls.Add(this.btnMini);
@@ -108,7 +108,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(681, 41);
             this.panelNavRight.Name = "panelNavRight";
@@ -117,7 +117,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 41);
             this.panel3.Name = "panel3";
@@ -126,7 +126,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 576);
             this.panel2.Name = "panel2";
@@ -179,7 +179,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(199, 269);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 32);
@@ -189,7 +189,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(199, 376);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(275, 32);
@@ -199,7 +199,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(169, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(327, 32);
@@ -209,7 +209,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(169, 47);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(364, 32);
@@ -222,7 +222,7 @@
             this.btnSeePass1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeePass1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.btnSeePass1.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnSeePass1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.btnSeePass1.IconColor = System.Drawing.Color.Teal;
             this.btnSeePass1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSeePass1.IconSize = 30;
             this.btnSeePass1.Location = new System.Drawing.Point(56, 315);
@@ -239,7 +239,7 @@
             this.btnSeePass2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeePass2.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.btnSeePass2.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnSeePass2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.btnSeePass2.IconColor = System.Drawing.Color.Teal;
             this.btnSeePass2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSeePass2.IconSize = 30;
             this.btnSeePass2.Location = new System.Drawing.Point(56, 429);
@@ -252,7 +252,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnAceptar.BackColor = System.Drawing.Color.Teal;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,7 +273,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -294,7 +294,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnEnviar.BackColor = System.Drawing.Color.Teal;
             this.btnEnviar.FlatAppearance.BorderSize = 0;
             this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnviar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

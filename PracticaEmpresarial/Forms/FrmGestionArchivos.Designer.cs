@@ -37,6 +37,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelNavRight = new System.Windows.Forms.Panel();
             this.DgvListaArchivos = new System.Windows.Forms.DataGridView();
+            this.CIDImg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CDescripcionTipoArchivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVerArchivo = new FontAwesome.Sharp.IconButton();
             this.btnGuardarArchivo = new FontAwesome.Sharp.IconButton();
             this.btnEditarArchivo = new FontAwesome.Sharp.IconButton();
@@ -53,16 +56,13 @@
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.label8 = new System.Windows.Forms.Label();
             this.cbTipoArchivo = new System.Windows.Forms.ComboBox();
-            this.CIDImg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CDescripcionTipoArchivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaArchivos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.BtnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -89,7 +89,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 40);
             this.panel3.Name = "panel3";
@@ -98,7 +98,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(10, 589);
             this.panel2.Name = "panel2";
@@ -107,7 +107,7 @@
             // 
             // panelNavRight
             // 
-            this.panelNavRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.panelNavRight.BackColor = System.Drawing.Color.Teal;
             this.panelNavRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNavRight.Location = new System.Drawing.Point(1103, 40);
             this.panelNavRight.Name = "panelNavRight";
@@ -152,9 +152,32 @@
             this.DgvListaArchivos.VirtualMode = true;
             this.DgvListaArchivos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListaArchivos_CellClick);
             // 
+            // CIDImg
+            // 
+            this.CIDImg.DataPropertyName = "IDImg";
+            this.CIDImg.HeaderText = "Codigo Archivo";
+            this.CIDImg.Name = "CIDImg";
+            this.CIDImg.ReadOnly = true;
+            // 
+            // CNombre
+            // 
+            this.CNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CNombre.DataPropertyName = "Nombre";
+            this.CNombre.HeaderText = "Nombre del Archivo";
+            this.CNombre.Name = "CNombre";
+            this.CNombre.ReadOnly = true;
+            // 
+            // CDescripcionTipoArchivo
+            // 
+            this.CDescripcionTipoArchivo.DataPropertyName = "DescripcionTipoArchivo";
+            this.CDescripcionTipoArchivo.HeaderText = "Tipo Archivo";
+            this.CDescripcionTipoArchivo.Name = "CDescripcionTipoArchivo";
+            this.CDescripcionTipoArchivo.ReadOnly = true;
+            this.CDescripcionTipoArchivo.Width = 200;
+            // 
             // btnVerArchivo
             // 
-            this.btnVerArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnVerArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnVerArchivo.FlatAppearance.BorderSize = 0;
             this.btnVerArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerArchivo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,7 +198,7 @@
             // 
             // btnGuardarArchivo
             // 
-            this.btnGuardarArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnGuardarArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnGuardarArchivo.FlatAppearance.BorderSize = 0;
             this.btnGuardarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarArchivo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,7 +219,7 @@
             // 
             // btnEditarArchivo
             // 
-            this.btnEditarArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnEditarArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnEditarArchivo.FlatAppearance.BorderSize = 0;
             this.btnEditarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarArchivo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,7 +240,7 @@
             // 
             // btnSeleccionarArchivo
             // 
-            this.btnSeleccionarArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSeleccionarArchivo.BackColor = System.Drawing.Color.Teal;
             this.btnSeleccionarArchivo.FlatAppearance.BorderSize = 0;
             this.btnSeleccionarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeleccionarArchivo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -277,7 +300,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -298,7 +321,7 @@
             // 
             // btnExaminar
             // 
-            this.btnExaminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnExaminar.BackColor = System.Drawing.Color.Teal;
             this.btnExaminar.FlatAppearance.BorderSize = 0;
             this.btnExaminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExaminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -325,7 +348,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label9.ForeColor = System.Drawing.Color.Teal;
             this.label9.Location = new System.Drawing.Point(547, 466);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(434, 49);
@@ -346,7 +369,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnLimpiar.BackColor = System.Drawing.Color.Teal;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -385,29 +408,6 @@
             this.cbTipoArchivo.Size = new System.Drawing.Size(311, 25);
             this.cbTipoArchivo.TabIndex = 136;
             this.cbTipoArchivo.SelectionChangeCommitted += new System.EventHandler(this.cbTipoArchivo_SelectionChangeCommitted);
-            // 
-            // CIDImg
-            // 
-            this.CIDImg.DataPropertyName = "IDImg";
-            this.CIDImg.HeaderText = "Codigo Archivo";
-            this.CIDImg.Name = "CIDImg";
-            this.CIDImg.ReadOnly = true;
-            // 
-            // CNombre
-            // 
-            this.CNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CNombre.DataPropertyName = "Nombre";
-            this.CNombre.HeaderText = "Nombre del Archivo";
-            this.CNombre.Name = "CNombre";
-            this.CNombre.ReadOnly = true;
-            // 
-            // CDescripcionTipoArchivo
-            // 
-            this.CDescripcionTipoArchivo.DataPropertyName = "DescripcionTipoArchivo";
-            this.CDescripcionTipoArchivo.HeaderText = "Tipo Archivo";
-            this.CDescripcionTipoArchivo.Name = "CDescripcionTipoArchivo";
-            this.CDescripcionTipoArchivo.ReadOnly = true;
-            this.CDescripcionTipoArchivo.Width = 200;
             // 
             // FrmGestionArchivos
             // 
