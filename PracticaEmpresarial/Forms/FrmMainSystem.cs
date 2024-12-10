@@ -774,12 +774,12 @@ namespace PracticaEmpresarial.Forms
 
         private void btnRefrescar_MouseEnter(object sender, EventArgs e)
         {
-            Transition.run(btnRefrescar, "BackColor", Color.FromArgb(42, 96, 148), new TransitionType_Linear(500));
+           // Transition.run(btnRefrescar, "BackColor", Color.FromArgb(42, 96, 148), new TransitionType_Linear(500));
         }
 
         private void btnRefrescar_MouseLeave(object sender, EventArgs e)
         {
-            Transition.run(btnRefrescar, "BackColor", Color.FromArgb(59, 141, 220), new TransitionType_Linear(500));
+            //Transition.run(btnRefrescar, "BackColor", Color.FromArgb(59, 141, 220), new TransitionType_Linear(500));
         }
 
         private void btnRefrescar_Click(object sender, EventArgs e)

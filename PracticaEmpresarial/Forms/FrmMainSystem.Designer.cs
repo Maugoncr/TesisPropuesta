@@ -87,7 +87,6 @@
             this.checkArvaco2 = new System.Windows.Forms.CheckBox();
             this.checkCoarsa2 = new System.Windows.Forms.CheckBox();
             this.checkBoth2 = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.DgvListaCambiosOil = new System.Windows.Forms.DataGridView();
             this.CPlaca3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.COilDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,7 +94,6 @@
             this.checkCoarsa = new System.Windows.Forms.CheckBox();
             this.checkBoth = new System.Windows.Forms.CheckBox();
             this.btnRefrescar = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.DgvListaMarchamos = new System.Windows.Forms.DataGridView();
             this.CPlaca2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CMarchamo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +107,9 @@
             this.CPlaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CRTV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelTitleNav.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelSubMenu6.SuspendLayout();
@@ -782,11 +783,11 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(16, 11);
+            this.label5.Location = new System.Drawing.Point(3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(381, 79);
+            this.label5.Size = new System.Drawing.Size(209, 79);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Bienvenido al Sistema";
+            this.label5.Text = "Bienvenido:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblUserLog
@@ -795,15 +796,18 @@
             this.lblUserLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblUserLog.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserLog.ForeColor = System.Drawing.Color.Teal;
-            this.lblUserLog.Location = new System.Drawing.Point(44, 75);
+            this.lblUserLog.Location = new System.Drawing.Point(218, 14);
             this.lblUserLog.Name = "lblUserLog";
-            this.lblUserLog.Size = new System.Drawing.Size(594, 60);
+            this.lblUserLog.Size = new System.Drawing.Size(766, 60);
             this.lblUserLog.TabIndex = 11;
             this.lblUserLog.Text = "UsuarioLog";
             this.lblUserLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelFullCenter
             // 
+            this.panelFullCenter.Controls.Add(this.label3);
+            this.panelFullCenter.Controls.Add(this.label1);
+            this.panelFullCenter.Controls.Add(this.label2);
             this.panelFullCenter.Controls.Add(this.AlertImg);
             this.panelFullCenter.Controls.Add(this.btnComprobarAlerta);
             this.panelFullCenter.Controls.Add(this.pictureBox2);
@@ -813,13 +817,11 @@
             this.panelFullCenter.Controls.Add(this.checkArvaco2);
             this.panelFullCenter.Controls.Add(this.checkCoarsa2);
             this.panelFullCenter.Controls.Add(this.checkBoth2);
-            this.panelFullCenter.Controls.Add(this.label8);
             this.panelFullCenter.Controls.Add(this.DgvListaCambiosOil);
             this.panelFullCenter.Controls.Add(this.checkArvaco);
             this.panelFullCenter.Controls.Add(this.checkCoarsa);
             this.panelFullCenter.Controls.Add(this.checkBoth);
             this.panelFullCenter.Controls.Add(this.btnRefrescar);
-            this.panelFullCenter.Controls.Add(this.label1);
             this.panelFullCenter.Controls.Add(this.DgvListaMarchamos);
             this.panelFullCenter.Controls.Add(this.label7);
             this.panelFullCenter.Controls.Add(this.check1mes);
@@ -842,7 +844,7 @@
             // 
             this.AlertImg.BackColor = System.Drawing.Color.Teal;
             this.AlertImg.Image = global::PracticaEmpresarial.Properties.Resources.AlertGood;
-            this.AlertImg.Location = new System.Drawing.Point(1595, 782);
+            this.AlertImg.Location = new System.Drawing.Point(220, 965);
             this.AlertImg.Name = "AlertImg";
             this.AlertImg.Size = new System.Drawing.Size(20, 18);
             this.AlertImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -859,7 +861,7 @@
             this.btnComprobarAlerta.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnComprobarAlerta.IconColor = System.Drawing.Color.Black;
             this.btnComprobarAlerta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnComprobarAlerta.Location = new System.Drawing.Point(1398, 768);
+            this.btnComprobarAlerta.Location = new System.Drawing.Point(23, 951);
             this.btnComprobarAlerta.Name = "btnComprobarAlerta";
             this.btnComprobarAlerta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnComprobarAlerta.Size = new System.Drawing.Size(222, 45);
@@ -887,7 +889,7 @@
             this.checkAll.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkAll.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkAll.ForeColor = System.Drawing.Color.Teal;
-            this.checkAll.Location = new System.Drawing.Point(1316, 224);
+            this.checkAll.Location = new System.Drawing.Point(1331, 832);
             this.checkAll.Name = "checkAll";
             this.checkAll.Size = new System.Drawing.Size(89, 21);
             this.checkAll.TabIndex = 47;
@@ -901,7 +903,7 @@
             this.checkMes.FlatAppearance.BorderSize = 0;
             this.checkMes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkMes.ForeColor = System.Drawing.Color.Teal;
-            this.checkMes.Location = new System.Drawing.Point(1513, 224);
+            this.checkMes.Location = new System.Drawing.Point(1528, 832);
             this.checkMes.Name = "checkMes";
             this.checkMes.Size = new System.Drawing.Size(92, 21);
             this.checkMes.TabIndex = 46;
@@ -914,7 +916,7 @@
             this.check3Meses.AutoSize = true;
             this.check3Meses.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check3Meses.ForeColor = System.Drawing.Color.Teal;
-            this.check3Meses.Location = new System.Drawing.Point(1411, 224);
+            this.check3Meses.Location = new System.Drawing.Point(1426, 832);
             this.check3Meses.Name = "check3Meses";
             this.check3Meses.Size = new System.Drawing.Size(96, 21);
             this.check3Meses.TabIndex = 45;
@@ -927,54 +929,44 @@
             this.checkArvaco2.AutoSize = true;
             this.checkArvaco2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkArvaco2.ForeColor = System.Drawing.Color.Teal;
-            this.checkArvaco2.Location = new System.Drawing.Point(1537, 197);
+            this.checkArvaco2.Location = new System.Drawing.Point(857, 957);
             this.checkArvaco2.Name = "checkArvaco2";
             this.checkArvaco2.Size = new System.Drawing.Size(74, 21);
             this.checkArvaco2.TabIndex = 44;
             this.checkArvaco2.Text = "Arvaco";
             this.checkArvaco2.UseVisualStyleBackColor = true;
+            this.checkArvaco2.Visible = false;
             this.checkArvaco2.CheckedChanged += new System.EventHandler(this.checkArvaco2_CheckedChanged);
             // 
             // checkCoarsa2
             // 
             this.checkCoarsa2.AutoSize = true;
+            this.checkCoarsa2.Checked = true;
+            this.checkCoarsa2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkCoarsa2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkCoarsa2.ForeColor = System.Drawing.Color.Teal;
-            this.checkCoarsa2.Location = new System.Drawing.Point(1458, 197);
+            this.checkCoarsa2.Location = new System.Drawing.Point(778, 957);
             this.checkCoarsa2.Name = "checkCoarsa2";
             this.checkCoarsa2.Size = new System.Drawing.Size(74, 21);
             this.checkCoarsa2.TabIndex = 43;
             this.checkCoarsa2.Text = "Coarsa";
             this.checkCoarsa2.UseVisualStyleBackColor = true;
+            this.checkCoarsa2.Visible = false;
             this.checkCoarsa2.CheckedChanged += new System.EventHandler(this.checkCoarsa2_CheckedChanged);
             // 
             // checkBoth2
             // 
             this.checkBoth2.AutoSize = true;
-            this.checkBoth2.Checked = true;
-            this.checkBoth2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoth2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoth2.ForeColor = System.Drawing.Color.Teal;
-            this.checkBoth2.Location = new System.Drawing.Point(1380, 197);
+            this.checkBoth2.Location = new System.Drawing.Point(700, 957);
             this.checkBoth2.Name = "checkBoth2";
             this.checkBoth2.Size = new System.Drawing.Size(72, 21);
             this.checkBoth2.TabIndex = 42;
             this.checkBoth2.Text = "Ambos";
             this.checkBoth2.UseVisualStyleBackColor = true;
+            this.checkBoth2.Visible = false;
             this.checkBoth2.CheckedChanged += new System.EventHandler(this.checkBoth2_CheckedChanged);
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label8.Location = new System.Drawing.Point(1284, 148);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(336, 59);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Cambios de Aceite";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // DgvListaCambiosOil
             // 
@@ -989,7 +981,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvListaCambiosOil.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -1007,7 +999,7 @@
             this.DgvListaCambiosOil.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvListaCambiosOil.EnableHeadersVisualStyles = false;
             this.DgvListaCambiosOil.GridColor = System.Drawing.Color.DarkCyan;
-            this.DgvListaCambiosOil.Location = new System.Drawing.Point(1194, 254);
+            this.DgvListaCambiosOil.Location = new System.Drawing.Point(1151, 254);
             this.DgvListaCambiosOil.MultiSelect = false;
             this.DgvListaCambiosOil.Name = "DgvListaCambiosOil";
             this.DgvListaCambiosOil.ReadOnly = true;
@@ -1016,11 +1008,11 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.DgvListaCambiosOil.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DgvListaCambiosOil.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvListaCambiosOil.Size = new System.Drawing.Size(426, 495);
+            this.DgvListaCambiosOil.Size = new System.Drawing.Size(469, 568);
             this.DgvListaCambiosOil.TabIndex = 39;
             // 
             // CPlaca3
@@ -1044,40 +1036,43 @@
             this.checkArvaco.AutoSize = true;
             this.checkArvaco.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkArvaco.ForeColor = System.Drawing.Color.Teal;
-            this.checkArvaco.Location = new System.Drawing.Point(542, 197);
+            this.checkArvaco.Location = new System.Drawing.Point(610, 959);
             this.checkArvaco.Name = "checkArvaco";
             this.checkArvaco.Size = new System.Drawing.Size(74, 21);
             this.checkArvaco.TabIndex = 38;
             this.checkArvaco.Text = "Arvaco";
             this.checkArvaco.UseVisualStyleBackColor = true;
+            this.checkArvaco.Visible = false;
             this.checkArvaco.CheckedChanged += new System.EventHandler(this.checkArvaco_CheckedChanged);
             // 
             // checkCoarsa
             // 
             this.checkCoarsa.AutoSize = true;
+            this.checkCoarsa.Checked = true;
+            this.checkCoarsa.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkCoarsa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkCoarsa.ForeColor = System.Drawing.Color.Teal;
-            this.checkCoarsa.Location = new System.Drawing.Point(440, 197);
+            this.checkCoarsa.Location = new System.Drawing.Point(508, 959);
             this.checkCoarsa.Name = "checkCoarsa";
             this.checkCoarsa.Size = new System.Drawing.Size(74, 21);
             this.checkCoarsa.TabIndex = 37;
             this.checkCoarsa.Text = "Coarsa";
             this.checkCoarsa.UseVisualStyleBackColor = true;
+            this.checkCoarsa.Visible = false;
             this.checkCoarsa.CheckedChanged += new System.EventHandler(this.checkCoarsa_CheckedChanged);
             // 
             // checkBoth
             // 
             this.checkBoth.AutoSize = true;
-            this.checkBoth.Checked = true;
-            this.checkBoth.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoth.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoth.ForeColor = System.Drawing.Color.Teal;
-            this.checkBoth.Location = new System.Drawing.Point(342, 197);
+            this.checkBoth.Location = new System.Drawing.Point(410, 959);
             this.checkBoth.Name = "checkBoth";
             this.checkBoth.Size = new System.Drawing.Size(72, 21);
             this.checkBoth.TabIndex = 36;
             this.checkBoth.Text = "Ambos";
             this.checkBoth.UseVisualStyleBackColor = true;
+            this.checkBoth.Visible = false;
             this.checkBoth.CheckedChanged += new System.EventHandler(this.checkBoth_CheckedChanged);
             // 
             // btnRefrescar
@@ -1086,28 +1081,15 @@
             this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefrescar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.Color.White;
-            this.btnRefrescar.Location = new System.Drawing.Point(1051, 207);
+            this.btnRefrescar.Location = new System.Drawing.Point(956, 829);
             this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(107, 28);
+            this.btnRefrescar.Size = new System.Drawing.Size(151, 28);
             this.btnRefrescar.TabIndex = 35;
-            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.Text = "Refrescar Marchamos";
             this.btnRefrescar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             this.btnRefrescar.MouseEnter += new System.EventHandler(this.btnRefrescar_MouseEnter);
             this.btnRefrescar.MouseLeave += new System.EventHandler(this.btnRefrescar_MouseLeave);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(828, 148);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 59);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Marchamos";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // DgvListaMarchamos
             // 
@@ -1122,7 +1104,7 @@
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvListaMarchamos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
@@ -1140,7 +1122,7 @@
             this.DgvListaMarchamos.DefaultCellStyle = dataGridViewCellStyle5;
             this.DgvListaMarchamos.EnableHeadersVisualStyles = false;
             this.DgvListaMarchamos.GridColor = System.Drawing.Color.DarkCyan;
-            this.DgvListaMarchamos.Location = new System.Drawing.Point(732, 254);
+            this.DgvListaMarchamos.Location = new System.Drawing.Point(681, 254);
             this.DgvListaMarchamos.MultiSelect = false;
             this.DgvListaMarchamos.Name = "DgvListaMarchamos";
             this.DgvListaMarchamos.ReadOnly = true;
@@ -1149,11 +1131,11 @@
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
             this.DgvListaMarchamos.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DgvListaMarchamos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvListaMarchamos.Size = new System.Drawing.Size(426, 495);
+            this.DgvListaMarchamos.Size = new System.Drawing.Size(426, 568);
             this.DgvListaMarchamos.TabIndex = 33;
             // 
             // CPlaca2
@@ -1178,11 +1160,11 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(58, 220);
+            this.label7.Location = new System.Drawing.Point(65, 827);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(183, 29);
             this.label7.TabIndex = 32;
-            this.label7.Text = "Elige la temporalidad";
+            this.label7.Text = "Rango de proximidad:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // check1mes
@@ -1191,7 +1173,7 @@
             this.check1mes.FlatAppearance.BorderSize = 0;
             this.check1mes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check1mes.ForeColor = System.Drawing.Color.Teal;
-            this.check1mes.Location = new System.Drawing.Point(542, 227);
+            this.check1mes.Location = new System.Drawing.Point(546, 832);
             this.check1mes.Name = "check1mes";
             this.check1mes.Size = new System.Drawing.Size(92, 21);
             this.check1mes.TabIndex = 31;
@@ -1204,7 +1186,7 @@
             this.checkAnio.AutoSize = true;
             this.checkAnio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkAnio.ForeColor = System.Drawing.Color.Teal;
-            this.checkAnio.Location = new System.Drawing.Point(342, 227);
+            this.checkAnio.Location = new System.Drawing.Point(346, 832);
             this.checkAnio.Name = "checkAnio";
             this.checkAnio.Size = new System.Drawing.Size(92, 21);
             this.checkAnio.TabIndex = 30;
@@ -1217,7 +1199,7 @@
             this.check6meses.AutoSize = true;
             this.check6meses.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check6meses.ForeColor = System.Drawing.Color.Teal;
-            this.check6meses.Location = new System.Drawing.Point(440, 227);
+            this.check6meses.Location = new System.Drawing.Point(444, 832);
             this.check6meses.Name = "check6meses";
             this.check6meses.Size = new System.Drawing.Size(96, 21);
             this.check6meses.TabIndex = 29;
@@ -1232,7 +1214,7 @@
             this.checkTodos.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkTodos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkTodos.ForeColor = System.Drawing.Color.Teal;
-            this.checkTodos.Location = new System.Drawing.Point(247, 227);
+            this.checkTodos.Location = new System.Drawing.Point(251, 832);
             this.checkTodos.Name = "checkTodos";
             this.checkTodos.Size = new System.Drawing.Size(89, 21);
             this.checkTodos.TabIndex = 28;
@@ -1242,15 +1224,15 @@
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.BackColor = System.Drawing.Color.DarkCyan;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(43, 148);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(58, 167);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(335, 59);
+            this.label6.Size = new System.Drawing.Size(580, 59);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Revisiones Técnicas";
+            this.label6.Text = "Próximas Revisiones Técnicas";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DgvListaRTV
@@ -1266,7 +1248,7 @@
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvListaRTV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
@@ -1293,11 +1275,11 @@
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
             this.DgvListaRTV.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.DgvListaRTV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvListaRTV.Size = new System.Drawing.Size(576, 495);
+            this.DgvListaRTV.Size = new System.Drawing.Size(576, 568);
             this.DgvListaRTV.TabIndex = 26;
             // 
             // CPlaca
@@ -1319,7 +1301,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PracticaEmpresarial.Properties.Resources.CoarsaLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 843);
+            this.pictureBox1.Location = new System.Drawing.Point(1243, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(377, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1327,6 +1309,45 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.DarkCyan;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(679, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(428, 59);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Marchamos";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DarkCyan;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1151, 167);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(469, 59);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Cambios de Aceite";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Teal;
+            this.label3.Location = new System.Drawing.Point(1147, 827);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(183, 29);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "Rango de proximidad:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmMainSystem
             // 
@@ -1400,7 +1421,6 @@
         private System.Windows.Forms.DataGridView DgvListaRTV;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPlaca;
         private System.Windows.Forms.DataGridViewTextBoxColumn CRTV;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView DgvListaMarchamos;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPlaca2;
         private System.Windows.Forms.DataGridViewTextBoxColumn CMarchamo;
@@ -1414,7 +1434,6 @@
         private System.Windows.Forms.CheckBox checkArvaco;
         private System.Windows.Forms.CheckBox checkCoarsa;
         private System.Windows.Forms.CheckBox checkBoth;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView DgvListaCambiosOil;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPlaca3;
         private System.Windows.Forms.DataGridViewTextBoxColumn COilDate;
@@ -1435,5 +1454,8 @@
         private FontAwesome.Sharp.IconButton btnGestionArchivos;
         private FontAwesome.Sharp.IconButton btnTipoArchivo;
         private FontAwesome.Sharp.IconButton btnOrdenesCompra;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
