@@ -215,12 +215,12 @@ namespace PracticaEmpresarial.Forms
 
         private void panel1_MouseEnter(object sender, EventArgs e)
         {
-            Transition.run(panel1, "BackColor", Color.FromArgb(46, 109, 169), new TransitionType_EaseInEaseOut(500));
+            //Transition.run(panel1, "BackColor", Color.FromArgb(46, 109, 169), new TransitionType_EaseInEaseOut(500));
         }
 
         private void panel1_MouseLeave(object sender, EventArgs e)
         {
-            Transition.run(panel1, "BackColor", Color.FromArgb(59, 141, 246), new TransitionType_EaseInEaseOut(500));
+           // Transition.run(panel1, "BackColor", Color.FromArgb(59, 141, 246), new TransitionType_EaseInEaseOut(500));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

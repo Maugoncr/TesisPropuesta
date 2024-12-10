@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,23 +46,21 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnRecuperarContra = new System.Windows.Forms.Button();
             this.btnIngresoDirecto = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelUser.SuspendLayout();
             this.panelContra.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(0, -1);
@@ -75,44 +71,18 @@
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
             this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
             // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(164, 564);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(169, 24);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Mauricio González Morales";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(44, 272);
+            this.label3.Location = new System.Drawing.Point(68, 261);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(286, 48);
+            this.label3.Size = new System.Drawing.Size(262, 56);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Gestión de Automotores";
+            this.label3.Text = "de Sistema Coarsa S.A";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(164, 516);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 48);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Desarrollado por";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // label1
             // 
@@ -124,7 +94,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 101);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenido al Sistema";
+            this.label1.Text = "Bienvenido al Prototipo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox2
@@ -143,7 +113,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(339, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(246, 101);
@@ -178,7 +148,7 @@
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.iconButton1.IconColor = System.Drawing.Color.Teal;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 35;
             this.iconButton1.Location = new System.Drawing.Point(11, 10);
@@ -215,7 +185,7 @@
             this.btnSeePass.FlatAppearance.BorderSize = 0;
             this.btnSeePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeePass.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnSeePass.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.btnSeePass.IconColor = System.Drawing.Color.Teal;
             this.btnSeePass.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSeePass.IconSize = 35;
             this.btnSeePass.Location = new System.Drawing.Point(11, 9);
@@ -228,7 +198,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.btnIngresar.BackColor = System.Drawing.Color.Teal;
             this.btnIngresar.FlatAppearance.BorderSize = 0;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,7 +216,7 @@
             this.lbHora.BackColor = System.Drawing.Color.Transparent;
             this.lbHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbHora.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.lbHora.ForeColor = System.Drawing.Color.Teal;
             this.lbHora.Location = new System.Drawing.Point(654, 539);
             this.lbHora.Name = "lbHora";
             this.lbHora.Size = new System.Drawing.Size(235, 48);
@@ -265,7 +235,7 @@
             this.btnRecuperarContra.FlatAppearance.BorderSize = 0;
             this.btnRecuperarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecuperarContra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecuperarContra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.btnRecuperarContra.ForeColor = System.Drawing.Color.Teal;
             this.btnRecuperarContra.Location = new System.Drawing.Point(344, 400);
             this.btnRecuperarContra.Name = "btnRecuperarContra";
             this.btnRecuperarContra.Size = new System.Drawing.Size(206, 38);
@@ -287,23 +257,12 @@
             this.btnIngresoDirecto.UseVisualStyleBackColor = true;
             this.btnIngresoDirecto.Click += new System.EventHandler(this.btnIngresoDirecto_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PracticaEmpresarial.Properties.Resources.CoarsaLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(591, 78);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // btnExit
             // 
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(141)))), ((int)(((byte)(246)))));
+            this.btnExit.IconColor = System.Drawing.Color.Teal;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.Location = new System.Drawing.Point(858, -1);
             this.btnExit.Name = "btnExit";
@@ -322,6 +281,18 @@
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PracticaEmpresarial.Properties.Resources.CoarsaLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(591, 78);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmLogin
             // 
@@ -355,8 +326,8 @@
             this.panelUser.PerformLayout();
             this.panelContra.ResumeLayout(false);
             this.panelContra.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,11 +335,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelUser;
@@ -384,5 +352,6 @@
         private System.Windows.Forms.Button btnRecuperarContra;
         private FontAwesome.Sharp.IconButton btnIngresoDirecto;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
