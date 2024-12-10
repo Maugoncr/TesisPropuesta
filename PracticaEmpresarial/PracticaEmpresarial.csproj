@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A688EAA-2E17-4CF5-9196-FE76498CF41D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PracticaEmpresarial</RootNamespace>
+    <AssemblyName>PracticaEmpresarial</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commons\ObjetosGlobales.cs" />
+    <Compile Include="FormsReportes\FrmReporteGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteGastos.Designer.cs">
+      <DependentUpon>FrmReporteGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteMantenimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteMantenimientos.Designer.cs">
+      <DependentUpon>FrmReporteMantenimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteVehiculoPorPlaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteVehiculoPorPlaca.Designer.cs">
+      <DependentUpon>FrmReporteVehiculoPorPlaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteVehiculosAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsReportes\FrmReporteVehiculosAll.Designer.cs">
+      <DependentUpon>FrmReporteVehiculosAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMessageBox.Designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Alert.Designer.cs">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBitacora.Designer.cs">
+      <DependentUpon>FrmBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCompanies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCompanies.Designer.cs">
+      <DependentUpon>FrmCompanies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCrearReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCrearReportes.Designer.cs">
+      <DependentUpon>FrmCrearReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDarPermiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDarPermiso.Designer.cs">
+      <DependentUpon>FrmDarPermiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGestionArchivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGestionArchivos.Designer.cs">
+      <DependentUpon>FrmGestionArchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGestionChoferes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGestionChoferes.Designer.cs">
+      <DependentUpon>FrmGestionChoferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGestionGastosVarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGestionGastosVarios.Designer.cs">
+      <DependentUpon>FrmGestionGastosVarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGestionMantenimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGestionMantenimientos.Designer.cs">
+      <DependentUpon>FrmGestionMantenimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGestionTiposMantenimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGestionTiposMantenimientos.Designer.cs">
+      <DependentUpon>FrmGestionTiposMantenimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGestionVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGestionVehiculos.Designer.cs">
+      <DependentUpon>FrmGestionVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMainSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainSystem.Designer.cs">
+      <DependentUpon>FrmMainSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOrdendeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOrdendeCompra.Designer.cs">
+      <DependentUpon>FrmOrdendeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPlaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPlaces.Designer.cs">
+      <DependentUpon>FrmPlaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRecuperarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRecuperarPassword.Designer.cs">
+      <DependentUpon>FrmRecuperarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRevisarRetrasos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRevisarRetrasos.Designer.cs">
+      <DependentUpon>FrmRevisarRetrasos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRevisarWarnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRevisarWarnings.Designer.cs">
+      <DependentUpon>FrmRevisarWarnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectChofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectChofer.Designer.cs">
+      <DependentUpon>FrmSelectChofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectOrdenCompra.Designer.cs">
+      <DependentUpon>FrmSelectOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectVehiculos.Designer.cs">
+      <DependentUpon>FrmSelectVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTipoArchivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTipoArchivos.Designer.cs">
+      <DependentUpon>FrmTipoArchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTipoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTipoVehiculo.Designer.cs">
+      <DependentUpon>FrmTipoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUsersRols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUsersRols.Designer.cs">
+      <DependentUpon>FrmUsersRols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUsuarioGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUsuarioGestion.Designer.cs">
+      <DependentUpon>FrmUsuarioGestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmVisualizadorReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmVisualizadorReportes.Designer.cs">
+      <DependentUpon>FrmVisualizadorReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxCustom.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\RptGastos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptGastos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptMantenimientos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptMantenimientos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptVehiculoByCompany.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptVehiculoByCompany.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptVehiculoByPlaca.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptVehiculoByPlaca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="FormsReportes\FrmReporteGastos.resx">
+      <DependentUpon>FrmReporteGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsReportes\FrmReporteMantenimientos.resx">
+      <DependentUpon>FrmReporteMantenimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsReportes\FrmReporteVehiculoPorPlaca.resx">
+      <DependentUpon>FrmReporteVehiculoPorPlaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsReportes\FrmReporteVehiculosAll.resx">
+      <DependentUpon>FrmReporteVehiculosAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Alert.resx">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBitacora.resx">
+      <DependentUpon>FrmBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCompanies.resx">
+      <DependentUpon>FrmCompanies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCrearReportes.resx">
+      <DependentUpon>FrmCrearReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDarPermiso.resx">
+      <DependentUpon>FrmDarPermiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGestionArchivos.resx">
+      <DependentUpon>FrmGestionArchivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGestionChoferes.resx">
+      <DependentUpon>FrmGestionChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGestionGastosVarios.resx">
+      <DependentUpon>FrmGestionGastosVarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGestionMantenimientos.resx">
+      <DependentUpon>FrmGestionMantenimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGestionTiposMantenimientos.resx">
+      <DependentUpon>FrmGestionTiposMantenimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGestionVehiculos.resx">
+      <DependentUpon>FrmGestionVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMainSystem.resx">
+      <DependentUpon>FrmMainSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrdendeCompra.resx">
+      <DependentUpon>FrmOrdendeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPlaces.resx">
+      <DependentUpon>FrmPlaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRecuperarPassword.resx">
+      <DependentUpon>FrmRecuperarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRevisarRetrasos.resx">
+      <DependentUpon>FrmRevisarRetrasos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRevisarWarnings.resx">
+      <DependentUpon>FrmRevisarWarnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectChofer.resx">
+      <DependentUpon>FrmSelectChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectOrdenCompra.resx">
+      <DependentUpon>FrmSelectOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectVehiculos.resx">
+      <DependentUpon>FrmSelectVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTipoArchivos.resx">
+      <DependentUpon>FrmTipoArchivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTipoVehiculo.resx">
+      <DependentUpon>FrmTipoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUsersRols.resx">
+      <DependentUpon>FrmUsersRols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUsuarioGestion.resx">
+      <DependentUpon>FrmUsuarioGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmVisualizadorReportes.resx">
+      <DependentUpon>FrmVisualizadorReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\RptGastos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGastos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptMantenimientos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptMantenimientos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptVehiculoByCompany.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptVehiculoByCompany.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptVehiculoByPlaca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptVehiculoByPlaca.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{c7f990aa-402c-4c61-8154-e384aa917045}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoarsaLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paso1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvaco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvacoLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertBad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertGood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertCuidado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labelWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamationOrden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-25.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
