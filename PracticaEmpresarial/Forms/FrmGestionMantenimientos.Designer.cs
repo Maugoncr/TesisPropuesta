@@ -832,9 +832,9 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(36, 611);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 19);
+            this.label7.Size = new System.Drawing.Size(93, 19);
             this.label7.TabIndex = 164;
-            this.label7.Text = "Orden Compra:";
+            this.label7.Text = "Num Orden:";
             // 
             // txtOrdenCompra
             // 

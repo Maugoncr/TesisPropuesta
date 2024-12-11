@@ -654,6 +654,7 @@
             this.checkCoarsa.TabIndex = 95;
             this.checkCoarsa.Text = "Coarsa";
             this.checkCoarsa.UseVisualStyleBackColor = true;
+            this.checkCoarsa.Visible = false;
             this.checkCoarsa.CheckedChanged += new System.EventHandler(this.checkCoarsa_CheckedChanged_1);
             // 
             // checkArvaco
@@ -666,6 +667,7 @@
             this.checkArvaco.TabIndex = 96;
             this.checkArvaco.Text = "Arvaco";
             this.checkArvaco.UseVisualStyleBackColor = true;
+            this.checkArvaco.Visible = false;
             this.checkArvaco.CheckedChanged += new System.EventHandler(this.checkArvaco_CheckedChanged);
             // 
             // label12
